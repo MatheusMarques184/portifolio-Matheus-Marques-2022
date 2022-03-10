@@ -11,7 +11,7 @@ export default function() {
         <S.IntroContent >
           <S.IntroTextContent>
             <S.Title>Olá,eu sou Matheus Marques</S.Title>
-            <S.Subtitle>DEV Full Stack JR</S.Subtitle>
+            <S.Subtitle>Dev Full Stack JR</S.Subtitle>
             <S.Paragraph>Fiz essa aplicação com o objetivo de criar uma apresentação e também usar um pouco dos meus conhecimentos em React.JS e Styled-components</S.Paragraph>
           </S.IntroTextContent>
           <S.IntroImg>

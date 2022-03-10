@@ -4,6 +4,7 @@ import * as S from "../../../../styles";
 
 export const Title = styled.h2`
   width: 100%;
+  margin: 0;
 `;
 
 export const Image = styled.img`
