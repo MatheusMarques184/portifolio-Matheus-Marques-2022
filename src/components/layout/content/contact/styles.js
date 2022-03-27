@@ -35,7 +35,12 @@ export const Contacts = styled.div`
 
 export const ImageContacts = styled.img`
   width: 100%;
-  width: 16rem;
-  height: 16rem;
-  margin: 6rem;
+  width: 22rem;
+  height: 22rem;
+  margin: 0 6rem 0 6rem;
+  ${media.lessThan("medium")`
+    margin: 0 0 6rem 0;
+    width: 16rem;
+    height: 16rem;
+  `};
 `;

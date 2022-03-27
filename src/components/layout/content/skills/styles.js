@@ -37,8 +37,12 @@ export const GalerryImg = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 26rem;
-  height: 26rem;
+  width: 22rem;
+  height: 22rem;
+  ${media.lessThan("medium")`
+    width: 16rem;
+    height: 16rem;
+  `};
 `;
 
 export const Text = styled.div`

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import * as S from "../../../../styles";
+import media from "styled-media-query";
 
 export const Projects = styled(S.WhiteBg)``;
 
@@ -21,8 +22,12 @@ export const Description = styled.p`
 
 export const Image = styled.img`
   width: 100%;
-  width: 26rem;
-  height: 26rem;
+  width: 22rem;
+  height: 22rem;
+  ${media.lessThan("medium")`
+    width: 16rem;
+    height: 16rem;
+  `};
 `;
 
 export const ContentImg = styled.div``;
