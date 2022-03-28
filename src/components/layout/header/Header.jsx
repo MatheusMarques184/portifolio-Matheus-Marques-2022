@@ -33,7 +33,7 @@ export default function(props) {
       <S.Menu></S.Menu>
       <S.Menu2>
       <S.MenuContent>
-        <S.TitleMenu onClick={checked}>
+        <S.TitleMenu>
           <S.LinkTitleMenu href="#home"></S.LinkTitleMenu>
         </S.TitleMenu>
         <S.NavMenu>
