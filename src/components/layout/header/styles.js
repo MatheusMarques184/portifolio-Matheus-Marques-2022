@@ -97,7 +97,7 @@ export const LinkTitleMenu = styled.a`
   }
 `;
 
-export const UlMenu = styled.ul`
+export const UlMenuMobile = styled.ul`
   list-style: none;
   display: none;
   ${media.lessThan("medium")`
@@ -107,7 +107,7 @@ export const UlMenu = styled.ul`
   `}
 `;
 
-export const UlMenuTeste = styled.ul`
+export const UlMenu = styled.ul`
   list-style: none;
   display: flex;
   ${media.lessThan("medium")`

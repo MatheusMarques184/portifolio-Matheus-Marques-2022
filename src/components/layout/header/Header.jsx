@@ -37,16 +37,7 @@ export default function(props) {
           <S.LinkTitleMenu href="#home"></S.LinkTitleMenu>
         </S.TitleMenu>
         <S.NavMenu>
-        <S.UlMenuTeste>
-            <li><S.LinkUl href="#home"><FaHome size={28}/></S.LinkUl></li>
-            <li><S.LinkUl href="#about"><FaUser size={26}/></S.LinkUl></li>
-            <li><S.LinkUl href="#skills"><BsFillLightningChargeFill size={26}/></S.LinkUl></li>
-            <li><S.LinkUl href="#projects"><BsGearFill size={26}/></S.LinkUl></li>
-            <li><S.LinkUl href="#contact"><RiContactsBook2Fill size={28}/></S.LinkUl></li>
-            <li><S.LinkUl onClick={changeTheme}>{icon}</S.LinkUl></li>
-            <li><S.LinkUl href={cv} download="Curriculo_Matheus_Marques">Baixe meu CV</S.LinkUl></li>
-          </S.UlMenuTeste>
-          <S.UlMenu onClick={checked}>
+        <S.UlMenu>
             <li><S.LinkUl href="#home"><FaHome size={28}/></S.LinkUl></li>
             <li><S.LinkUl href="#about"><FaUser size={26}/></S.LinkUl></li>
             <li><S.LinkUl href="#skills"><BsFillLightningChargeFill size={26}/></S.LinkUl></li>
@@ -55,6 +46,15 @@ export default function(props) {
             <li><S.LinkUl onClick={changeTheme}>{icon}</S.LinkUl></li>
             <li><S.LinkUl href={cv} download="Curriculo_Matheus_Marques">Baixe meu CV</S.LinkUl></li>
           </S.UlMenu>
+          <S.UlMenuMobile onClick={checked}>
+            <li><S.LinkUl href="#home"><FaHome size={28}/></S.LinkUl></li>
+            <li><S.LinkUl href="#about"><FaUser size={26}/></S.LinkUl></li>
+            <li><S.LinkUl href="#skills"><BsFillLightningChargeFill size={26}/></S.LinkUl></li>
+            <li><S.LinkUl href="#projects"><BsGearFill size={26}/></S.LinkUl></li>
+            <li><S.LinkUl href="#contact"><RiContactsBook2Fill size={28}/></S.LinkUl></li>
+            <li><S.LinkUl onClick={changeTheme}>{icon}</S.LinkUl></li>
+            <li><S.LinkUl href={cv} download="Curriculo_Matheus_Marques">Baixe meu CV</S.LinkUl></li>
+          </S.UlMenuMobile>
         </S.NavMenu>
       </S.MenuContent>
     </S.Menu2>
