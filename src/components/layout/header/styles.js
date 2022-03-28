@@ -99,13 +99,21 @@ export const LinkTitleMenu = styled.a`
 
 export const UlMenu = styled.ul`
   list-style: none;
-  display: flex;
+  display: none;
   ${media.lessThan("medium")`
+    display: flex ;
     flex-direction: column;
     justify-content: center;
   `}
 `;
 
+export const UlMenuTeste = styled.ul`
+  list-style: none;
+  display: flex;
+  ${media.lessThan("medium")`
+    display: none ;
+  `}
+`;
 export const LinkUl = styled.a`
   display: block;
   padding: 1rem;
