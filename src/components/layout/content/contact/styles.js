@@ -5,13 +5,13 @@ import * as S from "../../../../styles";
 export const Contact = styled(S.MainBg)``;
 
 export const ContactContent = styled(S.MainContent)`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  ${media.lessThan("medium")`
-    display: block;
+  ${media.lessThan("large")`
+    
     `}
 `;
 
@@ -27,8 +27,9 @@ export const Contacts = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 10rem;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     flex-flow: column wrap;
   `};
 `;
@@ -38,7 +39,7 @@ export const ImageContacts = styled.img`
   width: 22rem;
   height: 22rem;
   margin: 0 6rem 0 6rem;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     margin: 0 0 6rem 0;
     width: 16rem;
     height: 16rem;

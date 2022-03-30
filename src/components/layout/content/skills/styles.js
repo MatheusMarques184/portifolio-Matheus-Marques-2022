@@ -28,7 +28,7 @@ export const GalerryImg = styled.div`
     opacity: 0.8;
   }
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     width: 100%;
     max-width: 100%;
     max-height: 100%;
@@ -39,7 +39,7 @@ export const GalerryImg = styled.div`
 export const Image = styled.img`
   width: 22rem;
   height: 22rem;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     width: 16rem;
     height: 16rem;
   `};
@@ -65,10 +65,6 @@ export const GridContent = styled(S.MainContent)`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
-  ${media.lessThan("large")`
-    display: block;
-  `}
 `;
 
 export const Title = styled.h2`
@@ -87,6 +83,7 @@ export const Grid = styled.div`
 
   ${media.lessThan("large")`
     grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
   `}
 
   ${media.lessThan("medium")`

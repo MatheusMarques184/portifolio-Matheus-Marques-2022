@@ -10,17 +10,17 @@ export const CloseMenuLabel = styled.label`
     z-index: 2;
     top: 2rem;
     right: 2rem;
-    color: var(--white-color);
-    font-size: 3rem;
+    color: ${(props) => props.theme.colorIcon};
+    font-size: 5rem;
     line-height: 3rem;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     text-align: center;
     padding: 0.5rem;
     cursor: pointer;
   }
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     &:after{
         display: block;
     }
@@ -37,7 +37,7 @@ export const Menu = styled.aside`
   border-bottom: ${(props) => props.theme.border};
   background: ${(props) => props.theme.asideBackground};
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     border: none;
   `}
 `;
@@ -52,7 +52,7 @@ export const Menu2 = styled.div`
   border-bottom: ${(props) => props.theme.border};
   background: ${(props) => props.theme.asideBackground};
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     display: none;
   `}
 `;
@@ -60,7 +60,7 @@ export const Menu2 = styled.div`
 export const CloseMenu = styled.input`
   display: none;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     &:checked ~ ${Menu} ~ ${Menu2} {
         display: block;
         bottom: 0;
@@ -78,7 +78,7 @@ export const MenuContent = styled(S.MainContent)`
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     height: 100vh;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +100,7 @@ export const LinkTitleMenu = styled.a`
 export const UlMenuMobile = styled.ul`
   list-style: none;
   display: none;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@ export const UlMenuMobile = styled.ul`
 export const UlMenu = styled.ul`
   list-style: none;
   display: flex;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     display: none ;
   `}
 `;
@@ -142,7 +142,7 @@ export const LinkUl = styled.a`
 export const MenuSpacing = styled.div`
   height: 56px;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     display: none;
   `}
 `;

@@ -73,32 +73,7 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: 3rem;
     }
 
-    ${media.lessThan("medium")`
-        h1 {
-            font-size: 3rem;
-        }
-
-        h2 {
-            font-size: 3rem;
-        }
-
-        h3 {
-            font-size: 3.4rem;
-        }
-
-        h4 {
-            font-size: 3.2rem;
-        }
-
-        h5 {
-            font-size: 2.5rem;
-        }
-
-        h6 {
-            font-size: 1.5rem;
-        }
-    `}
-
+    
 `;
 
 export default GlobalStyle;

@@ -18,7 +18,7 @@ export const IntroContent = styled(S.MainContent)`
   gap: var(--gap);
   min-height: 100vh;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     grid-template-columns: 1fr;
   `}
 `;

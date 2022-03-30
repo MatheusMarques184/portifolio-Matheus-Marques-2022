@@ -24,7 +24,7 @@ export const Image = styled.img`
   width: 100%;
   width: 22rem;
   height: 22rem;
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     width: 16rem;
     height: 16rem;
   `};

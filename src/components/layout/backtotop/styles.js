@@ -4,7 +4,7 @@ import media from "styled-media-query";
 export const BackToTop = styled.a`
   display: none;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("large")`
     position: fixed;
     bottom: 2rem;
     right: 2rem;
